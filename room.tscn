@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c3xsl34r24bjq"]
+[gd_scene load_steps=3 format=3 uid="uid://c3xsl34r24bjq"]
 
 [ext_resource type="PackedScene" uid="uid://c0gusfmkks80v" path="res://player.tscn" id="1_88gup"]
+[ext_resource type="PackedScene" uid="uid://x11p1wkciy1c" path="res://enemy.tscn" id="2_bisa2"]
 
 [node name="Room" type="Node2D"]
 
@@ -8,7 +9,29 @@
 custom_minimum_size = Vector2(320, 180)
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 2
 color = Color(0.0687983, 0.0687983, 0.0687983, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_88gup")]
 position = Vector2(157, 96)
+
+[node name="Enemy" parent="." instance=ExtResource("2_bisa2")]
+position = Vector2(62, 56)
+
+[node name="Enemy2" parent="." instance=ExtResource("2_bisa2")]
+position = Vector2(261, 33)
+
+[node name="Enemy3" parent="." instance=ExtResource("2_bisa2")]
+position = Vector2(96, 70)
+
+[node name="Enemy4" parent="." instance=ExtResource("2_bisa2")]
+position = Vector2(78, 42)
+
+[node name="Enemy5" parent="." instance=ExtResource("2_bisa2")]
+position = Vector2(95, 51)
+
+[node name="Enemy6" parent="." instance=ExtResource("2_bisa2")]
+position = Vector2(80, 82)
+
+[node name="Enemy7" parent="." instance=ExtResource("2_bisa2")]
+position = Vector2(62, 74)

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm0i1uaa4kvyq"]
+
+[ext_resource type="Script" uid="uid://cu68ldnc1l2fw" path="res://gun.gd" id="1_vk1bi"]
+
+[node name="Gun" type="Sprite2D"]
+script = ExtResource("1_vk1bi")
+
+[node name="FireRate" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
